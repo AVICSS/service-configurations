@@ -4,6 +4,9 @@ spring:
   data:
     mongodb:
       database: user
+      host: cluster0.0gjsx.mongodb.net
+      username: sandbox-user
+      password: JL9hCbGkaJIWZXdz
       
 
 

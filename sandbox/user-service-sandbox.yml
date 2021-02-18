@@ -3,7 +3,8 @@ spring:
     name: user-service
   data:
     mongodb:
-      uri: mongodb+srv://sandbox-user:JL9hCbGkaJIWZXdz@cluster0.0gjsx.mongodb.net/user?retryWrites=true&w=majority
+      database: user
+      
 
 
 server:

@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: user-service
+  data:
+    mongodb:
+      uri: mongodb+srv://sandbox-user:JL9hCbGkaJIWZXdz@cluster0.0gjsx.mongodb.net/user?retryWrites=true&w=majority
+
+
+server:
+  port: 8080
+
+logging:
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+  level:
+    root: INFO
+    org.mongodb.driver.cluster: ERROR
+    org.mongodb.driver.connection: ERROR
+    org.zalando.logbook: TRACE
+    org.springframework.web.filter.CommonsRequestLoggingFilter: ERROR
+
+logbook:
+  include:
+    - /user/**
+  filter.enabled: true
+  secure-filter.enabled: true
+  logbook.format.style: JSON
+
+integration:
+  hubspot: true
+  qob: false
+  commerce: false
+  offlineEmail: false

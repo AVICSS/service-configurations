@@ -1,0 +1,26 @@
+# Default JWT secret token (to be changed in production!)
+jhipster:
+    security:
+        authentication:
+            jwt:
+                secret: bXktc2VjcmV0LXRva2VuLXRvLWNoYW5nZS1pbi1wcm9kdWN0aW9uLWFuZC10by1rZWVwLWluLWEtc2VjdXJlLXBsYWNl
+ 
+spring:
+  application:
+    name: market-service
+  data:
+    mongodb:
+      uri: mongodb+srv://sandbox-user:oWU49YArvOS1W3QA@cluster0-zegr3.mongodb.net/market?retryWrites=true
+  cloud:
+    kubernetes:
+      reload:
+        enabled: true
+
+            
+server:
+  port: 8080           
+
+  
+logging:
+  level:
+    root: ERROR

@@ -7,7 +7,7 @@ spring:
 
 
 server:
- port: 8081
+ port: 8080
 
 logging:
  pattern:
@@ -26,9 +26,3 @@ logbook:
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
-
-integration:
- hubspot: true
- qob: false
- commerce: false
- offlineEmail: false

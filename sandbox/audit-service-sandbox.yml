@@ -6,8 +6,6 @@ spring:
      database: audit
 
 
-custom:
-  date: yyyy-MM-dd HH:mm:ss
 
 server:
  port: 8080

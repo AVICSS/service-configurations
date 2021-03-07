@@ -6,9 +6,9 @@ spring:
       database: user
   rabbitmq:
     host: kangaroo.rmq.cloudamqp.com
-    username: gzjkgfjg
+    username: gzjkgfjg:gzjkgfjg
     password: JXftW8QtpkLJqBB-XphWrjUf7BK3nOhM
-    port: 1883
+    port: 8883
 
 
 

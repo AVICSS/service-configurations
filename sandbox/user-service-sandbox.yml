@@ -8,7 +8,7 @@ rabbitmq:
   host: kangaroo.rmq.cloudamqp.com
   username: gzjkgfjg:gzjkgfjg
   password: JXftW8QtpkLJqBB-XphWrjUf7BK3nOhM
-  port: 1883
+  port: 8883
 
 
 server:

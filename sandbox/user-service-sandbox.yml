@@ -5,7 +5,7 @@ spring:
     mongodb:
       database: user
   rabbitmq:
-    host: https://sandbox.avicss.com
+    host: localhost
     username: user
     password: 7xxjf7s402
     port: 5672

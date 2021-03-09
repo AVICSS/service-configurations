@@ -5,9 +5,7 @@ spring:
     mongodb:
       database: user
   rabbitmq:
-    host: https://sandbox.avicss.com
-    username: user
-    password: 7xxjf7s402
+    addresses: amqps://gzjkgfjg:JXftW8QtpkLJqBB-XphWrjUf7BK3nOhM@kangaroo.rmq.cloudamqp.com/gzjkgfjg
     
 
 

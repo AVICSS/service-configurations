@@ -1,10 +1,11 @@
 spring:
- application:
-   name: audit-service
- data:
-   mongodb:
-     database: audit
-
+  application:
+    name: audit-service
+  data:
+    mongodb:
+      database: audit
+  rabbitmq:
+    addresses: amqp://gzjkgfjg:JXftW8QtpkLJqBB-XphWrjUf7BK3nOhM@kangaroo.rmq.cloudamqp.com/gzjkgfjg
 
 
 server:

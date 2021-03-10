@@ -5,7 +5,7 @@ spring:
     mongodb:
       database: user
   rabbitmq:
-    addresses: amqps://gzjkgfjg:JXftW8QtpkLJqBB-XphWrjUf7BK3nOhM@kangaroo.rmq.cloudamqp.com/gzjkgfjg
+    addresses: amqp://gzjkgfjg:JXftW8QtpkLJqBB-XphWrjUf7BK3nOhM@kangaroo.rmq.cloudamqp.com/gzjkgfjg
     
 
 

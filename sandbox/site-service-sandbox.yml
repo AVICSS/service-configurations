@@ -4,12 +4,9 @@ spring:
   data:
     mongodb:
       database: site
-  rabbitmq:
-    addresses: amqp://gzjkgfjg:JXftW8QtpkLJqBB-XphWrjUf7BK3nOhM@kangaroo.rmq.cloudamqp.com/gzjkgfjg
-
 
 server:
- port: 8081
+ port: 8080
 
 logging:
  pattern:

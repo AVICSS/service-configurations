@@ -1,7 +1,3 @@
-# Property used on app startup to check the config server status
-configserver:
-    name: Early Breakfast Registry config server
-    status: Connected to the JHipster Registry config server, using https://github.com/early-breakfast/earlybreakfast-config
-
-
-  
+services:
+  discovery:
+    host: https://prod.avicss.com/

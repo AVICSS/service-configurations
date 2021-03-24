@@ -4,6 +4,8 @@ spring:
   data:
     mongodb:
       database: role
+  rabbitmq:
+    addresses: amqp://gzjkgfjg:JXftW8QtpkLJqBB-XphWrjUf7BK3nOhM@kangaroo.rmq.cloudamqp.com/gzjkgfjg
 
 server:
  port: 8080

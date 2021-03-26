@@ -1,46 +1,29 @@
-# Default JWT secret token (to be changed in production!)
-jhipster:
-    security:
-        authentication:
-            jwt:
-                secret: bXktc2VjcmV0LXRva2VuLXRvLWNoYW5nZS1pbi1wcm9kdWN0aW9uLWFuZC10by1rZWVwLWluLWEtc2VjdXJlLXBsYWNl
- 
 spring:
   application:
-    name: shoppingcart-service
+    name: permission-service
   data:
     mongodb:
-      uri: mongodb+srv://sandbox-user:oWU49YArvOS1W3QA@cluster0-zegr3.mongodb.net/shoppingcart?retryWrites=trues
-
-  cloud:
-    stream:
-      bindings:
-        output:
-          destination: checkout
-
-    gcp:
-      sql:
-        enable: false
-      project-id: spheric-duality-248208
-      credentials:
-        location: classpath:service_account_sandbox.json
+      database: permission
+  rabbitmq:
+    addresses: amqp://gzjkgfjg:JXftW8QtpkLJqBB-XphWrjUf7BK3nOhM@kangaroo.rmq.cloudamqp.com/gzjkgfjg
 
 server:
-  port: 8080
-
-
-swagger:
-  enable: true
-
-firebase:
-  config:
-    path: firebase-sandbox.json
-
-
-pricing:
-  minimumCharge: 15
-  deliveryFees: 5
+ port: 8080
 
 logging:
-  level:
-    root: ERROR
+ pattern:
+   file: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+   console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+ level:
+   root: INFO
+   org.mongodb.driver.cluster: ERROR
+   org.mongodb.driver.connection: ERROR
+   org.zalando.logbook: TRACE
+   org.springframework.web.filter.CommonsRequestLoggingFilter: ERROR
+
+logbook:
+ include:
+   - /permission/**
+ filter.enabled: true
+ secure-filter.enabled: true
+ logbook.format.style: JSON

@@ -5,9 +5,15 @@ spring:
     mongodb:
       database: site
 
-
 server:
  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 
 logging:
  pattern:

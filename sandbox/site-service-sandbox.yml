@@ -4,6 +4,15 @@ spring:
   data:
     mongodb:
       database: site
+  cloud:
+    kubernetes:
+      enabled: true
+      reload:
+        enabled: true
+
+eureka:
+  client:
+    enabled: false
 
 server:
  port: 8080
@@ -25,3 +34,6 @@ logbook:
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
+
+
+  

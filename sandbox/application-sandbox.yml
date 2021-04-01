@@ -1,3 +1,10 @@
-services:
-  discovery:
-    host: https://sandbox.avicss.com/
+spring:
+  cloud:
+    kubernetes:
+      enabled: true
+      reload:
+        enabled: true
+
+eureka:
+  client:
+    enabled: false

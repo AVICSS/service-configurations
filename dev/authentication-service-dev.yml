@@ -1,10 +1,10 @@
 spring:
   application:
-    name: site-service
+    name: authentication-service
   data:
     mongodb:
-      database: site
-
+      database: user
+  
 server:
  port: 8080
 
@@ -21,10 +21,7 @@ logging:
 
 logbook:
  include:
-   - /site/**
+   - /authentication/**
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
-
-
-  

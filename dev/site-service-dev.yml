@@ -5,6 +5,7 @@ spring:
     mongodb:
       database: site
 
+
 server:
  port: 8080
 

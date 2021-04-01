@@ -1,9 +1,10 @@
 spring:
   application:
-    name: site-service
+    name: audit-service
   data:
     mongodb:
-      database: site
+      database: audit
+
 
 server:
  port: 8080
@@ -21,10 +22,7 @@ logging:
 
 logbook:
  include:
-   - /site/**
+   - /audit/**
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
-
-
-  

@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: audit-service
+  data:
+    mongodb:
+      database: audit
+
+
+server:
+ port: 8080
+
+logging:
+ pattern:
+   file: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+   console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+ level:
+   root: INFO
+   org.mongodb.driver.cluster: ERROR
+   org.mongodb.driver.connection: ERROR
+   org.zalando.logbook: TRACE
+   org.springframework.web.filter.CommonsRequestLoggingFilter: ERROR
+
+logbook:
+ include:
+   - /audit/**
+ filter.enabled: true
+ secure-filter.enabled: true
+ logbook.format.style: JSON

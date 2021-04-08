@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: notification-email-service
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: semonsamir@gmail.com
+    password: Nokiae619@
+    properties:
+      mail:
+        smtp:
+          auth: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+            fallback: false
+          ssl:
+            enable: true
+          connectiontimeout: 1000000000
+          timeout: 1000000000
+          writetimeout: 1000000000
+
+
+server:
+ port: 8080
+
+logging:
+ pattern:
+   file: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+   console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+ level:
+   root: INFO
+   org.mongodb.driver.cluster: ERROR
+   org.mongodb.driver.connection: ERROR
+   org.zalando.logbook: TRACE
+   org.springframework.web.filter.CommonsRequestLoggingFilter: ERROR
+
+logbook:
+ include:
+   - /audit/**
+ filter.enabled: true
+ secure-filter.enabled: true
+ logbook.format.style: JSON

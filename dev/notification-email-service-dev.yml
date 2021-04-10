@@ -34,7 +34,7 @@ logging:
 
 logbook:
  include:
-   - /audit/**
+   - /notification-email/**
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON

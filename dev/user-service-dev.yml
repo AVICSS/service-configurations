@@ -19,6 +19,10 @@ logging:
     org.zalando.logbook: TRACE
     org.springframework.web.filter.CommonsRequestLoggingFilter: ERROR
 
+email:
+  reset: https://www.avicss.com/
+  enable: true
+
 logbook:
   include:
     - /user/**

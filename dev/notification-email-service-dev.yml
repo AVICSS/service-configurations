@@ -16,9 +16,6 @@ spring:
             fallback: false
           ssl:
             enable: true
-          connectiontimeout: 1000000000
-          timeout: 1000000000
-          writetimeout: 1000000000
 
 
 server:

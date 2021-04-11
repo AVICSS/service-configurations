@@ -1,12 +1,10 @@
 spring:
   application:
-    name: authentication-service
-  data:
-    mongodb:
-      database: user
+    name: api-gateway
+
   
 server:
- port: 8081
+ port: 8080
 
 logging:
  pattern:
@@ -21,7 +19,7 @@ logging:
 
 logbook:
  include:
-   - /authentication/**
+   - /api-gateway/**
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
@@ -33,3 +31,20 @@ app:
       key-alias: jwtsigning
       keystore-password: password
       keystore-location: keys/keystore.jks
+
+eureka:
+    client:
+        service-url:
+            default-zone: http://localhost:8761/eureka/
+
+zuul:
+    ignored-services: '*'
+    routes:
+        auth-service:
+            path: /auth/**
+            sensitive-headers: 'Cookie,Set-Cookie '
+            service-id: AUTH-SERVICE
+            strip-prefix: false
+        gallery-service:
+            path: /gallery/**
+            service-id: gallery-service

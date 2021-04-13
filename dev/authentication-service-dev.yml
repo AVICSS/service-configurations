@@ -33,3 +33,10 @@ app:
       key-alias: jwtsigning
       keystore-password: password
       keystore-location: keys/keystore.jks
+
+security:
+  token:
+    issuer: security
+    expired: 1
+    refreshExpired: 60
+    signing-key: securityKey

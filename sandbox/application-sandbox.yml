@@ -1,9 +1,15 @@
 spring:
   cloud:
-    kubernetes:
-      enabled: true
-      reload:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    discovery:
+      locator:
         enabled: true
+    kubernetes:
+      loadbalancer:
+        enabled: true
+      enabled: true
 
 eureka:
   client:

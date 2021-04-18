@@ -14,3 +14,8 @@ spring:
 eureka:
   client:
     enabled: false
+
+
+security:
+  authURL: https://sandbox.avicss.com
+  key: securityKey

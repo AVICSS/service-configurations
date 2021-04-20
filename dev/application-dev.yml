@@ -11,6 +11,3 @@ spring:
         enabled: false
       enabled: false
 
-eureka:
-  client:
-    enabled: false

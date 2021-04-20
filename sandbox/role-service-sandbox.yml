@@ -3,7 +3,7 @@ spring:
     name: role-service
   data:
     mongodb:
-      database: role
+      database: user
 
 server:
  port: 8080

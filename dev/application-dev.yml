@@ -11,3 +11,6 @@ spring:
         enabled: false
       enabled: false
 
+security:
+  authURL: https://sandbox.avicss.com
+  key: securityKey

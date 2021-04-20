@@ -37,6 +37,6 @@ app:
 security:
   token:
     issuer: security
-    expired: 1
+    expired: 30
     refreshExpired: 60
     signing-key: securityKey

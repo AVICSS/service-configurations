@@ -1,12 +1,12 @@
 spring:
   application:
-    name: terminal-service
+    name: airline-service
   data:
     mongodb:
-      database: terminal
+      database: airline
 
 server:
- port: 8090
+ port: 8080
 
 logging:
  pattern:
@@ -21,13 +21,13 @@ logging:
 
 logbook:
  include:
-   - /terminal/**
+   - /airline/**
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
 
 info:
   app:
-    name: Terminal API
-    description: This is terminal API
+    name: Airline API
+    description: This is airline API
     version: 1.0.0

@@ -1,9 +1,9 @@
 spring:
   application:
-    name: terminal-service
+    name: airport-layout-service
   data:
     mongodb:
-      database: terminal
+      database: airport-layout
 
 server:
  port: 8080
@@ -21,14 +21,13 @@ logging:
 
 logbook:
  include:
-   - /terminal/**
+   - /airport-layout/**
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
 
-
 info:
   app:
-    name: Terminal API
-    description: This is terminal API
+    name: Airport layout API
+    description: This is airport layout API
     version: 1.0.0

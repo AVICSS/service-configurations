@@ -23,3 +23,10 @@ logbook:
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
+
+
+info:
+  app:
+    name: API Gateway API
+    description: This is Gateway API
+    version: 1.0.0

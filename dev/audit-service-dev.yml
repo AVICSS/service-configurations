@@ -26,3 +26,9 @@ logbook:
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
+
+info:
+  app:
+    name: Audit API
+    description: This is audit API
+    version: 1.0.0

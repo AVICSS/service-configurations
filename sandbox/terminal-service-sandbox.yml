@@ -25,3 +25,10 @@ logbook:
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
+
+
+info:
+  app:
+    name: Terminal API
+    description: This is terminal API
+    version: 1.0.0

@@ -25,3 +25,9 @@ logbook:
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
+
+info:
+  app:
+    name: Permission API
+    description: This is permission API
+    version: 1.0.0

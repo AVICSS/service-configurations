@@ -29,3 +29,10 @@ logbook:
   filter.enabled: true
   secure-filter.enabled: true
   logbook.format.style: JSON
+
+
+info:
+  app:
+    name: User API
+    description: This is user API
+    version: 1.0.0

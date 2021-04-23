@@ -33,5 +33,9 @@ logbook:
  secure-filter.enabled: true
  logbook.format.style: JSON
 
-
   
+info:
+  app:
+    name: Site API
+    description: This is site API
+    version: 1.0.0

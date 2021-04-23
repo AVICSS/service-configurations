@@ -25,3 +25,10 @@ logbook:
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
+
+
+info:
+  app:
+    name: Role API
+    description: This is role API
+    version: 1.0.0

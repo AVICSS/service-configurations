@@ -32,3 +32,10 @@ security:
     expired: 30
     refreshExpired: 60
     signing-key: securityKey
+
+
+info:
+  app:
+    name: Authentication API
+    description: This is authentication API
+    version: 1.0.0

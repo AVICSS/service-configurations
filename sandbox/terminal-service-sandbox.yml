@@ -1,12 +1,12 @@
 spring:
   application:
-    name: terminal-service
+    name: airport-service
   data:
     mongodb:
-      database: terminal
+      database: airport
 
 server:
- port: 8090
+ port: 8080
 
 logging:
  pattern:
@@ -21,7 +21,7 @@ logging:
 
 logbook:
  include:
-   - /terminal/**
+   - /airport/**
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON

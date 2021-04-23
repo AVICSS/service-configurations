@@ -1,9 +1,7 @@
 spring:
   application:
-    name: authentication-service
-  data:
-    mongodb:
-      database: user
+    name: api-gateway
+
   
 server:
  port: 8080
@@ -21,15 +19,7 @@ logging:
 
 logbook:
  include:
-   - /authentication/**
+   - /api-gateway/**
  filter.enabled: true
  secure-filter.enabled: true
  logbook.format.style: JSON
-
-app:
-  security:
-    jwt:
-      private-key-passphrase: password
-      key-alias: jwtsigning
-      keystore-password: password
-      keystore-location: keys/keystore.jks

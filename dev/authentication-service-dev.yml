@@ -26,17 +26,9 @@ logbook:
  secure-filter.enabled: true
  logbook.format.style: JSON
 
-app:
-  security:
-    jwt:
-      private-key-passphrase: password
-      key-alias: jwtsigning
-      keystore-password: password
-      keystore-location: keys/keystore.jks
-
 security:
   token:
     issuer: security
-    expired: 1
+    expired: 30
     refreshExpired: 60
     signing-key: securityKey

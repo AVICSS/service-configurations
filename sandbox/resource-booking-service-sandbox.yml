@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: resource-booking-service
+  data:
+    mongodb:
+      database: resource
+
+server:
+ port: 8080
+
+logging:
+ pattern:
+   file: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+   console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+ level:
+   root: INFO
+   org.mongodb.driver.cluster: ERROR
+   org.mongodb.driver.connection: ERROR
+   org.zalando.logbook: TRACE
+   org.springframework.web.filter.CommonsRequestLoggingFilter: ERROR
+
+logbook:
+ include:
+   - /resource-booking/**
+ filter.enabled: true
+ secure-filter.enabled: true
+ logbook.format.style: JSON
+
+info:
+  app:
+    name: Resource booking API
+    description: This is resource booking API
+    version: 1.0.0

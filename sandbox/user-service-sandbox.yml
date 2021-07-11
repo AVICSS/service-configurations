@@ -4,6 +4,11 @@ spring:
   data:
     mongodb:
       database: user
+  datasource:
+    url: jdbc:mysql://35.234.92.199:3306/config_server
+    username: root
+    password: simon120288
+    driver-class-name: com.mysql.jdbc.Driver
 
 server:
   port: 8080
@@ -37,3 +42,5 @@ info:
     name: User API
     description: This is user API
     version: 1.0.0
+
+

@@ -9,7 +9,10 @@ spring:
     username: root
     password: simon120288
     driver-class-name: com.mysql.jdbc.Driver
-
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 server:
   port: 8080

@@ -10,6 +10,9 @@ spring:
     password: simon120288
     driver-class-name: com.mysql.jdbc.Driver
     jpa.hibernate.ddl-auto: none
+    hikari:
+      connection-timeout: 5000
+      maximum-pool-size: 10
 
 server:
   port: 8080

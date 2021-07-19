@@ -4,7 +4,15 @@ spring:
   data:
     mongodb:
       database: airport
-
+  datasource:
+    url: jdbc:mysql://35.234.92.199:3306/config_server
+    username: root
+    password: simon120288
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 server:
  port: 8080
 

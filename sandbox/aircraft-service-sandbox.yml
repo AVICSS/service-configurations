@@ -5,7 +5,7 @@ spring:
     mongodb:
       database: aircraft
   datasource:
-    url: jdbc:mysql://35.234.92.199:3306/config_server
+    url: jdbc:mysql://35.234.92.199:3306/audit
     username: root
     password: simon120288
     driver-class-name: com.mysql.jdbc.Driver

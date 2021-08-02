@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: flight-seasonal-service
+  data:
+    mongodb:
+      database: seasonal-flight
+  datasource:
+    url: jdbc:mysql://35.234.92.199:3306/audit
+    username: root
+    password: simon120288
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+ port: 8080
+
+logging:
+ pattern:
+   file: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+   console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+ level:
+   root: INFO
+   org.mongodb.driver.cluster: ERROR
+   org.mongodb.driver.connection: ERROR
+   org.zalando.logbook: TRACE
+   org.springframework.web.filter.CommonsRequestLoggingFilter: ERROR
+
+logbook:
+ include:
+   - /flight-seasonal/**
+ filter.enabled: true
+ secure-filter.enabled: true
+ logbook.format.style: JSON
+
+info:
+  app:
+    name: Seasonal flight API
+    description: This is seasonal flight API
+    version: 1.0.0

@@ -17,9 +17,9 @@ spring:
 
 mongodb:
   primary:
-    uri: seasonal-flight
+    uri: mongodb+srv://sandbox-user:M9DiZZYvpqRNNlU6@cluster0.0gjsx.mongodb.net/seasonal-flight
   secondary:
-    uri: flight
+    uri: mongodb+srv://sandbox-user:M9DiZZYvpqRNNlU6@cluster0.0gjsx.mongodb.net/flight
 
 server:
  port: 8080

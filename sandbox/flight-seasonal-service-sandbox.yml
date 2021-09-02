@@ -21,10 +21,6 @@ mongodb:
   secondary:
     uri: flight
 
-
-
-
-
 server:
  port: 8080
 
